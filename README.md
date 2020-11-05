@@ -5,7 +5,7 @@
 Este projeto consiste em um site estático para realizar o dimensionamento SESMT (Serviços Especializados em Engenharia de Segurança e em Medicina do Trabalho) de uma empresa.
 O cálculo para realizar este dimensinamento é baseado no grau de risco da empresa e na quantidade de funcionários dela.
 
-Link para acessar o site: [Google](https://thiago-alexandre.github.io/DimensionamentoSESMT/)
+[Link para acessar o site](https://thiago-alexandre.github.io/DimensionamentoSESMT/)
 
 ## Observação:
 
