@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+	<head>  
+		<meta charset="utf-8">
+	   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/main.js"></script>
+	   	<title>Tela Inicial</title>
+	   	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+	   	<header class="container-fluid p-3 text-white">
+	   		<div class="row">
+				<div class="col-sm-1"></div>
+      			<div class="col-sm-10">
+      				<h1>Dimensionamento SESMT</h1>
+      			</div>
+      			<div class="col-sm-1"></div>
+      		</div>
+	    </header>
+		<main class="container-fluid p-3 text-white">
+			<section class="rounded p-3 m-2">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10"><h3>Sobre a aplicação:</h3></div>
+					<div class="col-sm-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<p>Esta aplicação realiza o dimensionamento de SESMT de uma empresa com base no grau de risco e na quantidade 
+						de funcionários da empresa ou a soma dos funcionários dos estabelecimentos (quando isso pode ser aplicado). 
+						Este dimensionamento não está tratando os profissionais que poderiam atuar em período parcial, ou seja, o dimensionamento final 
+						contabiliza os profissionais com possibilidade de atuação parcial como se fossem profissionais com atuação integral.</p>
+				    </div>
+					<div class="col-sm-1"></div>
+				</div>
+			</section>
+			<section class="rounded p-3 m-2">
+  				<form action="#" id="formDados">
+  					<div class="row">
+  						<div class="col-sm-1"></div>
+  						<div class="col-sm-10"><h3>Dados:</h3></div>
+  						<div class="col-sm-1"></div>
+  					</div>
+  					<div class="row">
+  						<div class="col-sm-1"></div>
+  						<div class="col-sm-5">
+							<label for="grau">Grau de Risco:</label>
+						    <select class="form-control mb-2 mr-sm-2" id="grau">
+						    	<option value="1">Grau 1</option>
+						    	<option value="2">Grau 2</option>
+						    	<option value="3">Grau 3</option>
+						    	<option value="4">Grau 4</option>
+						    </select>
+  						</div>
+  						<div class="col-sm-5 mb-2">
+							<div class="form-group">
+							    <label for="numero">Quantidade de Funcionários:</label>
+							    <input type="text" class="form-control" placeholder="Informe a quantidade de funcionários" id="numero" maxlength="30" autofocus>
+							</div>
+  						</div>
+  						<div class="col-sm-1"></div>
+  					</div>
+  					<div class="row">
+  						<div class="col-sm-1"></div>
+  						<div class="col-sm-10">
+  							<button type="button" class="btn btn-dark mt-3 form-group mb-1" id="dimensionar">Dimensionar</button>
+  							<button type="button" class="btn btn-dark mt-3 form-group mb-1" id="limpar">Limpar</button>
+  						</div>
+  						<div class="col-sm-1"></div>
+  					</div>
+				</form>
+      		</section>
+      		<section class="row rounded p-3 m-2">
+	   			<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+      				<h2>Profissionais requeridos:</h2>
+      				<form id="formProfissionais">
+      					<div class="table-responsive">
+						    <table class="table table-hover" id="listaProfissionais">
+						     	<thead class="thead-dark">
+							        <tr>
+							          <th>Profissional</th>
+							          <th>Quantidade</th>
+							        </tr>
+						      	</thead>
+						      	<tbody>
+						      		
+						      	</tbody>
+						    </table>
+						  </div>
+      				</form>
+      			</div>
+      			<div class="col-sm-1"></div>
+      		</section>
+	    </main>
+	    <footer class="container-fluid text-white p-3">
+	   		<div class="row">
+	   			<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+      				<h4>Trabalho realizado para a disciplina de Segurança do Trabalho na Informática, por Thiago Alexandre Buerger</h4>
+      			</div>
+      		</div>
+	    </footer>
+	</body>
+</html>
