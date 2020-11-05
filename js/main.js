@@ -87,9 +87,12 @@ $(document).ready(function(){
             linha = 1;
         } else if(numero > 49){
             linha = 0;
+        } else if(numero > 0){
+        	linha = 0;
+        	coluna = 0;
         }
 
-        if (linha === -1 || coluna === -1) {
+        if (linha < 0 || coluna < 0) {
             alert("Valores inválidos!");
             limpar();
         } else{
